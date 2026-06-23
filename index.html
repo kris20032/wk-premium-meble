@@ -264,6 +264,10 @@ body::after{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;o
 .card:hover .ic-mark{width:100%;opacity:1}
 .card h3{transition:color var(--dur) var(--ease)}
 .card:hover h3{color:var(--gold-d)}
+/* FIX scrolled header — ciemny motyw spójny przy scrollu */
+header.scrolled{background:rgba(14,12,8,.94)!important;border-bottom:1px solid rgba(201,162,75,.2)}
+.scrolled .nav-links a,body.cine header.scrolled .nav-links a{color:#E6DECE!important;text-shadow:none}
+.scrolled .logo{color:#F6EFE0!important;text-shadow:none} .scrolled .logo span{color:var(--gold)!important}
 </style>
 </head>
 <body class="cine">
