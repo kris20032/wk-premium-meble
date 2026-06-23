@@ -145,19 +145,23 @@ body.cine header.scrolled .logo,body.cine header.scrolled .nav-links a{color:var
 body.cine header.scrolled .logo span{color:var(--gold-d);text-shadow:none}
 body.cine header.scrolled .logo span{color:var(--gold-d)}
 @media (prefers-reduced-motion:reduce){.hero-cine-bg,.hero-cine-scroll{animation:none}}
-/* LUX overrides — ciemny luksusowy motyw, złote akcenty, jasny tekst */
+/* LUX overrides — ciemny luksusowy motyw, złote akcenty, jasny tekst (classic + editorial 'ed-') */
 body{color:#F3ECDC}
 header{background:rgba(14,12,8,.86);border-bottom:1px solid rgba(201,162,75,.18)}
-.nav-links a{color:#d8d0c0} .burger{color:#F3ECDC}
+.nav-links a{color:#E6DECE!important} .burger{color:#F3ECDC}
 .hero{background:radial-gradient(circle at 82% 10%,rgba(201,162,75,.22),transparent 48%),radial-gradient(circle at 6% 94%,rgba(201,162,75,.10),transparent 44%),linear-gradient(160deg,#1a1610 0%,#0e0c08 100%)}
-.hero p.lead{color:#d8d0c0}
-.eyebrow{color:var(--gold)}
+/* wszystkie warianty tekstu wiodącego/opisowego na jasno */
+.hero p.lead,.ed-hero-lead p,.ed-about-txt p,.about-txt p{color:#E2D9C7!important}
+.desc,.card p,.head p,.price-note,.ed-offer .desc,.info p{color:#C9C0AC!important}
+.eyebrow{color:var(--gold)!important}
+h1,h2,h3,h4,.ttl,.about-txt h2,.ed-about-txt h2{color:#F6EFE0}
 .btn-gold{color:#161009}
 .btn-dark{background:transparent;border-color:rgba(201,162,75,.4);color:#F3ECDC} .btn-dark:hover{background:rgba(201,162,75,.12)}
 .card{background:#1c1811;border-color:rgba(201,162,75,.16)} .card:hover{border-color:rgba(201,162,75,.55)}
+.num{color:var(--gold)}
 .strip{background:#0c0a07}
-.about{background:#161208} .about-txt p{color:#d8d0c0}
-.info .row{border-bottom-color:rgba(201,162,75,.16)}
+.about,.ed-about{background:#161208}
+.info .row{border-bottom-color:rgba(201,162,75,.16)} .info b{color:#F3ECDC}
 .reviews{background:#0c0a07}
 footer{background:#0a0805;color:#a89f8c}
 
@@ -318,11 +322,11 @@ body::after{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;o
 <section id="galeria"><div class="wrap">
   <div class="head reveal"><span class="eyebrow">Galeria</span><h2>Nasze realizacje</h2><p>Zobacz meble, które wyszły z naszego warsztatu — od kuchni i szaf po detale z litego drewna w domach naszych klientów.</p></div>
   <div class="ed-gallery">
-    <div class="tile reveal" style="background-image:url('img/g1.jpg')"><span>Kuchnia na wymiar</span></div>
-    <div class="tile reveal" style="background-image:url('img/g2.jpg')"><span>Nowoczesna kuchnia</span></div>
-    <div class="tile reveal" style="background-image:url('img/g3.jpg')"><span>Kuchnia z drewnianym blatem</span></div>
+    <div class="tile reveal" style="background-image:url('img/g1.jpg')"><span>Nowoczesna kuchnia</span></div>
+    <div class="tile reveal" style="background-image:url('img/g2.jpg')"><span>Kuchnia z drewnianym blatem</span></div>
+    <div class="tile reveal" style="background-image:url('img/g3.jpg')"><span>Kuchnia z zabudową AGD</span></div>
     <div class="tile reveal" style="background-image:url('img/g4.jpg')"><span>Wykończenie premium</span></div>
-    <div class="tile reveal" style="background-image:url('img/g5.jpg')"><span>Kuchnia z zabudową AGD</span></div>
+    <div class="tile reveal" style="background-image:url('img/g5.jpg')"><span>Zabudowa i lamele</span></div>
     <div class="tile reveal" style="background-image:url('img/g6.jpg')"><span>Mebel na wymiar</span></div>
   </div>
 </div></section>
